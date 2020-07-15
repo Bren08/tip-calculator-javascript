@@ -28,22 +28,13 @@
 
         <div>
             <div>
-                <label>New Bill (per person):</label><span>0</span>
+                <label>New Bill (per person):</label><span id="newBill"></span>
             </div>
             <div>
-                <label>Tip Amount (per person):</label><span>0</span>
+                <label>Tip Amount (per person):</label><span id="tipEach"></span>
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById('container').onchange = function() {
-            var bill = document.getElementById('billTotal').value;
-            var tipPercent = document.getElementById('tipInput').value;
-            var split = document.getElementById('splitInput').value;
-
-            document.getElementById('tipOutput').innerHTML = tipPercent + "%";
-            document.getElementById('splitOutput').innerHTML = split;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
